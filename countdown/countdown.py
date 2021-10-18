@@ -39,7 +39,7 @@ if __name__ == '__main__':
     #######################################################################
     # Multiprocessing
 
-    pool = Pool(processes=8)
+    pool = Pool(processes=2)
     start = time.time()
     pool.apply_async(countdown, args=(COUNT//2,))
     pool.apply_async(countdown, args=(COUNT//2,))
